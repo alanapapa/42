@@ -1,0 +1,5 @@
+Credentials cache: API:3A28662D-ADB2-4706-A5F4-A0C11251BE2D
+        Principal: bbazarov@42KOCAELI.COM.TR
+
+  Issued                Expires               Principal
+Sep 28 18:06:26 2021  Sep 29 04:06:19 2021  krbtgt/42KOCAELI.COM.TR@42KOCAELI.COM.TR
