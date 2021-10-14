@@ -15,7 +15,7 @@ char	*ft_strncat(char *dest, char *src, int nb)
 	int	i;
 	int	dest_size;
 
-	i = -1;
+	i = 0;
 	dest_size = -1;
 	while (dest[++dest_size] != '\0')
 	{

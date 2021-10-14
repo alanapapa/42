@@ -27,12 +27,12 @@ int	main(void)
 	char	ex02_03str[] = {"42"};
 	char	ex02_03dest[20] = {"ecole_"};
 	char	ex04_05str[] = {"ecole42ecole"};
-	char	ex05dest[20] = {"Hello"};
+	char	ex05dest[10] = {"Hello"};
 
 // ex00
 	printf("-----------------------------\n");
 	printf("ex00\n\n");
-	printf("ft_strcmp('1234567890', '1234567899')\n");
+	printf("ft_strcmp('1234567890', '1234597890')\n");
 	printf("return: %d\n\n", ft_strcmp(ex00_01str1, ex00_01str2));
 	printf("ft_strcmp('1234567890', '1234567890')\n");
 	printf("return: %d\n\n", ft_strcmp(ex00_01str1, ex00_01str3));
@@ -65,6 +65,6 @@ int	main(void)
 // ex05
 	printf("-----------------------------\n");
 	printf("ex05\n\n");
-	printf("ft_strlcat('Hello', 'ecole4ecole', 20)\n");
-	printf("return: %d\n\n", ft_strlcat(ex05dest, ex04_05str, 20));
+	printf("ft_strlcat('Hello', 'ecole4ecole', 7)\n");
+	printf("return: %d\n\n", ft_strlcat(ex05dest, "ecole4ecole", 7));
 }
