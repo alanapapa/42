@@ -6,7 +6,7 @@
 /*   By: bbazarov <bbazarov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 02:16:31 by bbazarov          #+#    #+#             */
-/*   Updated: 2021/10/13 02:56:08 by bbazarov         ###   ########.fr       */
+/*   Updated: 2021/10/14 12:05:50 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,39 +53,37 @@ int	check_base2(char *base)
 	return (i);
 }
 
-void	if_negative(int *i, int *minus, int *bool_minus)
+void	if_negative(int *i, int *bool_minus)
 {
 	i++;
-	*minus = -1;
 	*bool_minus = 1;
 }
 
 int	ft_atoi_base(char *str, char *base)
 {
 	int	n;
-	int	minus;
 	int	i;
 	int	pow;
-	int	base_n;
 	int	bool_minus;
 
-	minus = 1;
 	bool_minus = 0;
 	i = 0;
-	if ((base_n = check_base2(base)))
+	if (check_base2(base))
 	{
 		if (*str == '-')
-			if_negative(&i, &minus, &bool_minus);
+			if_negative(&i, &bool_minus);
 		while (str[i])
 			i++;
 		pow = 0;
 		n = 0;
 		while (--i >= bool_minus)
-		{
-			if (get_index(str[i] != -1) && get_index(str[i] < base_n))
-				n += get_index(str[i]) * get_pow(base_n, pow++);
-		}
-		return (n * minus);
+			if (get_index(str[i] != -1)
+				&& get_index(str[i] < check_base2(base)))
+				n += get_index(str[i]) * get_pow(check_base2(base), pow++);
+		if (bool_minus == 1)
+			return (n * -1);
+		else
+			return (n);
 	}
 	return (0);
 }
