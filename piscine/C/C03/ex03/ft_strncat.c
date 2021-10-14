@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *src, int nb)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	dest_size;
+	unsigned int	i;
+	unsigned int	dest_size;
 
 	i = 0;
 	dest_size = -1;
