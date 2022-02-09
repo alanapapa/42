@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: bbazarov <@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 19:19:04 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/08 19:20:28 by bbazarov         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:47:12 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

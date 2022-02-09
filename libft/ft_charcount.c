@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_charcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: bbazarov <@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 03:29:13 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/09 03:29:49 by bbazarov         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:46:31 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

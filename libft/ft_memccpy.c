@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: bbazarov <@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 03:43:12 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/09 04:09:35 by bbazarov         ###   ########.fr       */
+/*   Updated: 2022/02/09 16:52:08 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t len)
 {
-	void	*p;
-
-	p = ft_memchr(src, c, len);
-	if (p)
-		return (ft_memcpy(dest, src, p - src + 1));
-	ft_memcpy(dest, src, len);
-	return ((void *)0);
+	if (len)
+		do {
+			if ((*(unsigned char *)dest++ = *(const unsigned char *)src++) == (unsigned char)c)
+				return ((unsigned char *)dest);
+		}
+		while (--len);
+	return (0);
 }

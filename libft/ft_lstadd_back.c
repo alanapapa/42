@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
+/*   By: bbazarov <@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 19:01:40 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/08 19:13:30 by bbazarov         ###   ########.fr       */
+/*   Updated: 2022/02/09 15:47:03 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
