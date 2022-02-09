@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_numlen.c                                        :+:      :+:    :+:   */
+/*   ft_charcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/08 16:20:56 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/09 03:31:15 by bbazarov         ###   ########.fr       */
+/*   Created: 2022/02/09 03:29:13 by bbazarov          #+#    #+#             */
+/*   Updated: 2022/02/09 03:29:49 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_numlen(long n, int base)
+int	ft_charcount(char const *s, char c)
 {
-	int	size;
+	int		count;
 
-	size = 1;
-	if (base != 10 && n < 0)
-		n = -n;
-	if (n < 0)
-		size++;
-	while (n / base)
-	{
-		size++;
-		n /= base;
-	}
-	return (size);
+	if (!s)
+		return (0);
+	count = 0;
+	while (*s != '\0')
+		if (*s++ == c)
+			count++;
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 14:56:10 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/09 02:42:58 by bbazarov         ###   ########.fr       */
+/*   Updated: 2022/02/09 03:32:00 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_itoa(int n);
+char			*ft_memdup(const char *str, int start, int end);
 
 char			**ft_split(char const *s, char c);
 char			**ft_split(char const *s, char c);
@@ -51,8 +52,8 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 int				ft_atoi(const char *str);
 int				ft_isspace(char c);
 int				ft_lstsize(t_list *lst);
-
-unsigned int	ft_numlen(long n, int base);
+int				ft_charcount(char const *s, char c);
+int				ft_numlen(long n, int base);
 
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);

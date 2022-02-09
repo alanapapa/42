@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_numlen.c                                        :+:      :+:    :+:   */
+/*   ft_memdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbazarov <bbazarov@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/08 16:20:56 by bbazarov          #+#    #+#             */
-/*   Updated: 2022/02/09 03:31:15 by bbazarov         ###   ########.fr       */
+/*   Created: 2022/02/09 03:23:52 by bbazarov          #+#    #+#             */
+/*   Updated: 2022/02/09 03:34:34 by bbazarov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_numlen(long n, int base)
-{
-	int	size;
+#include "libft.h"
 
-	size = 1;
-	if (base != 10 && n < 0)
-		n = -n;
-	if (n < 0)
-		size++;
-	while (n / base)
-	{
-		size++;
-		n /= base;
-	}
-	return (size);
+char	*ft_memdup(const char *str, int start, int end)
+{
+	char	*copy;
+	int		i;
+
+	i = 0;
+	copy = malloc(sizeof(char) * (end - start + 1));
+	while (start < end)
+		copy[i++] = str[start++];
+	copy[i] = '\0';
+	return (copy);
 }
